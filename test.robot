@@ -1,6 +1,11 @@
+*** Settings ***
+Library    SeleniumLibrary
+
 *** Test Cases ***
 This Test Should Pass
-    Sleep    4s
+    Open Browser   https://www.google.com   chrome
+    Sleep   4s
 
 This Test Should Pass Once Again
-    Sleep    4s
+    Open Browser   https://www.gmail.com   chrome
+    Sleep   4s
