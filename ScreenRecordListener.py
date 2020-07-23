@@ -25,4 +25,6 @@ class ScreenRecordListener:
     
     def end_test(self, data, test):
         if self.test_count != 0:
-            self.screencaplib.stop_video_recording()
+            file_path = self.screencaplib.stop_video_recording()
+            path = file_path.replace("\\","/")
+            BuiltIn().run_keyword("Log", '<video controls width="650"><source src="%s" type="video/webm"></video>' % (path), 'HTML', 'True')

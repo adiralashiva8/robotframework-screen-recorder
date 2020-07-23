@@ -1,6 +1,6 @@
 # Screen Recorder using Robotframework
 
-Using robotframework [SeleniumCapLibrary](https://github.com/mihaiparvu/ScreenCapLibrary) we can record screen
+Using robotframework [SeleniumCapLibrary](https://github.com/mihaiparvu/ScreenCapLibrary) we can record active screen
 
 ---
 ## How to use in my project
@@ -13,10 +13,4 @@ Using robotframework [SeleniumCapLibrary](https://github.com/mihaiparvu/ScreenCa
 **Step 3**: Execute test case using listener
  > `robot --listener ScreenRecordListener.py <mytest>.robot`
 
-Screen record videos will be created for each test case
-
----
-## TODO
-
- - Append video to log.html
-    > Will implement once [this](https://github.com/mihaiparvu/ScreenCapLibrary/issues/25) issue got resolved
+Screen record videos will be created for each test case & included in log.html
